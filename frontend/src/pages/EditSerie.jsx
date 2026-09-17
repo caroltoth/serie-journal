@@ -23,18 +23,14 @@ const EditSerie = () => {
 
   const handleUpdate = async (data) => {
     try {
-      // 1. Pegamos os dados do form e injetamos o ID convertido para número
       const dadosParaAtualizar = { ...data, id: Number(id) };
       
-      // 2. Enviamos para a rota exata que o professor pediu (sem o /id no final)
       await api.put('/series', dadosParaAtualizar);
       
       navigate('/listar');
     } catch (error) {
       console.error('Erro ao atualizar:', error);
       
-      // Um pequeno truque: se a API do professor na verdade exigir o /id (caso ele tenha digitado errado no PDF),
-      // o código tenta a rota alternativa automaticamente para você não ficar travada.
       try {
          await api.put(`/series/${id}`, { ...data, id: Number(id) });
          navigate('/listar');
