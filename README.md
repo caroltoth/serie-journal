@@ -27,17 +27,17 @@ Após iniciar o front-end, o terminal fornecerá um link local (geralmente http:
 
 ## Telas da Aplicação
 
-**Tela Inicial**
-![Tela Inicial](./frontend/img/inicio.png)
+**Página Inicial**
+![Página Inicial](img/inicial.png)
 
-**Tela de Cadastro**
-![Tela de Cadastro](./frontend/img/cadastro.png)
+**Sobre o Projeto**
+![Sobre o Projeto](img/sobre.png)
 
-**Lista de Séries**
-![Lista de Séries](./frontend/img/lista.png)
+**Cadastrar Série**
+![Cadastrar Série](img/cadastrar.png)
 
-**Sobre**
-![Tela de Sobre](./frontend/img/sobre.png)
+**Editar Série**
+![Editar Série](img/editar.png)
 
 **Autoria:**
 Front-end e Integração: Desenvolvido por Caroline Toth Leite.
