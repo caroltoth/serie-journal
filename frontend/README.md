@@ -1,78 +1,46 @@
-# 🎬 Series Journal - Fase 2
+Serie Journal - Aplicação Front-End
+Projeto desenvolvido no curso de Análise e Desenvolvimento de Sistemas na PUCRS, com foco na disciplina de Desenvolvimento Front-End. O "Serie Journal" é uma aplicação web para registro e gerenciamento de um catálogo de séries.
 
-**Desenvolvedora:** Caroline Toth Leite
-**Curso:** Análise e Desenvolvimento de Sistemas (PUCRS - 2027)
-**Disciplina:** Desenvolvimento de Sistemas Frontend
+O objetivo principal deste projeto foi construir uma interface de usuário dinâmica e integrá-la a uma API REST pré-existente.
 
----
+Estrutura do Projeto
+O repositório está dividido em duas pastas principais para facilitar a execução local:
 
-## 🚀 Sobre o Projeto
-O **Series Journal** é uma aplicação web (SPA) desenvolvida em **React** para o gerenciamento de séries. O projeto implementa um CRUD completo consumindo a API REST `serieJournal-api`. 
+frontend (Meu Desenvolvimento): Interface do usuário construída do zero com React e Vite. Focada na estilização, criação de componentes e integração de endpoints utilizando a biblioteca Axios para operações CRUD (GET, POST, PUT e DELETE).
 
-A interface foi construída com foco na usabilidade, utilizando **Material-UI (MUI)** para estilização visual e **React Router** para navegação fluida entre as telas.
+backend (API Fornecida): API REST construída em Node.js com Express, fornecida pelos professores da disciplina. A pasta inclui a base de dados (series.json) e uma collection do Postman para testar as rotas.
 
-### 🛠️ Tecnologias Utilizadas
-- **React** (Vite)
-- **Material-UI (MUI)** (Estilização e Componentes)
-- **React Router Dom** (Navegação de rotas)
-- **Axios** (Requisições HTTP)
-- **Vitest** (Testes Unitários)
+Tecnologias Utilizadas no Desenvolvimento
+Front-end: React, Vite, Axios, CSS.
 
----
+Ferramentas: Postman, NPM.
 
-## ⚙️ Como Executar o Projeto
+Pré-requisitos e Execução
+Para rodar a aplicação localmente, é necessário ter o Node.js instalado. A execução exige que o Back-end fornecido e o Front-end estejam rodando simultaneamente em terminais separados.
 
-Para testar a aplicação localmente, você precisará rodar a API (Back-end) e a Aplicação (Front-end) em terminais separados.
+1. Iniciando a API (Back-end)
+Abra o terminal e navegue até a pasta da API:
+cd backend
 
-### 1. Inicializando a API (Back-end)
-Navegue até a pasta da API (`serieJournal-api`) fornecida pelo professor e rode os comandos:
+Instale as dependências:
+npm install
 
-    npm install
-    npm start
+Inicie o servidor local:
+npm start
 
-> A API estará disponível em: http://localhost:5000
+2. Iniciando a Interface (Front-end)
+Abra um novo terminal e navegue até a pasta da interface:
+cd frontend
 
-### 2. Inicializando o Front-end
-Com a API rodando, abra um novo terminal na pasta deste projeto React (`fase2`) e execute:
+Instale as dependências do React:
+npm install
 
-    npm install
-    npm run dev
+Inicie a aplicação no modo de desenvolvimento:
+npm run dev
 
-> Acesse a aplicação no navegador em: http://localhost:5173
+Após iniciar o front-end, o terminal fornecerá um link local (geralmente http://localhost:5173) para acessar a aplicação no navegador.
 
----
+Autoria
+Front-end e Integração: Desenvolvido por Caroline Toth Leite.
 
-## 🧪 Testes Unitários
-Para rodar os testes configurados na aplicação, abra o terminal na pasta do projeto React e execute:
-
-    npm run test
-
----
-
-## 🧩 Estrutura de Componentes
-
-A arquitetura do projeto foi pensada para garantir organização, separação de responsabilidades e reaproveitamento de código:
-
-- **`App.jsx`**: Configuração global do tema (background personalizado via MUI) e definição das rotas principais (`BrowserRouter`).
-- **`Home.jsx` (Página)**: Tela de boas-vindas e recepção do usuário.
-- **`About.jsx` (Página)**: Tela informativa detalhando os objetivos do projeto.
-- **`AddSerie.jsx` / `EditSerie.jsx` (Páginas)**: Telas conteinerizadas responsáveis por buscar dados (GET) e integrar o envio do formulário com a API (POST e PUT).
-- **`ListSeries.jsx` (Página)**: Consome a lista de séries da API (GET) e fornece os dados para a interface visual.
-- **`SerieForm.jsx` (Componente)**: Formulário reutilizável, gerencia os inputs de forma controlada (evitando sobreposição visual em campos de data) e valida os dados de entrada.
-- **`SerieList.jsx` (Componente)**: Componente de apresentação puro. Renderiza os cards do Material-UI na tela e emite eventos de exclusão (DELETE) para a página pai.
-
----
-
-## 📸 Capturas de Tela
-
-### Tela Inicial (Home)
-![Home](./inicial.jpg)
-
-### Lista de Séries
-![Lista de Series](./lista.jpg)
-
-### Formulário de Cadastro
-![Cadastrar](./cadastrar.jpg)
-
-### Formulário de Edição
-![Editar](./editar.jpg)
+Back-end/API: Fornecido pela equipe docente da PUCRS.
