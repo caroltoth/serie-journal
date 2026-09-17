@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 
-// Aqui nós importamos a imagem salva no seu computador!
 import bgImage from './assets/bg.jpg'; 
 
 const theme = createTheme({
@@ -16,7 +15,7 @@ const theme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          backgroundImage: `url(${bgImage})`, // Usando a imagem local aqui
+          backgroundImage: `url(${bgImage})`,
           backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
           backgroundPosition: 'center',
