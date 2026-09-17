@@ -25,20 +25,6 @@ Instale as dependências do React: npm install
 Inicie a aplicação no modo de desenvolvimento: npm run dev
 Após iniciar o front-end, o terminal fornecerá um link local (geralmente http://localhost:5173) para acessar a aplicação no navegador.
 
-## Telas da Aplicação
-
-**Página Inicial**
-![Página Inicial](img/inicial.png)
-
-**Sobre o Projeto**
-![Sobre o Projeto](img/sobre.png)
-
-**Cadastrar Série**
-![Cadastrar Série](img/cadastrar.png)
-
-**Editar Série**
-![Editar Série](img/editar.png)
-
 **Autoria:**
 Front-end e Integração: Desenvolvido por Caroline Toth Leite.
 Back-end/API: Fornecido pela equipe docente da PUCRS.
