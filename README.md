@@ -1,5 +1,5 @@
 **Serie Journal - Aplicação Front-End**
-Projeto desenvolvido no curso de Análise e Desenvolvimento de Sistemas na PUCRS, com foco na disciplina de Desenvolvimento Front-End. O "Serie Journal" é uma aplicação web para registro e gerenciamento de um catálogo de séries.
+Projeto desenvolvido no 2º semestre do curso de ADS na PUCRS, na disciplina de Desenvolvimento Front-End. O "Serie Journal" é uma aplicação web para registro e gerenciamento de um catálogo de séries.
 O objetivo principal deste projeto foi construir uma interface de usuário dinâmica e integrá-la a uma API REST pré-existente.
 
 **Estrutura do Projeto**
